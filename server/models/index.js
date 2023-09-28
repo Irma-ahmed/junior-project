@@ -26,9 +26,9 @@ db.Comment=Comment
 db.connection=connection
 
 
-// connection.sync({force:true})
-// .then(()=>console.log('your tables are created'))
-// .catch((error)=>console.error(`please check an ${error} has occured`))
+connection.sync({force:false})
+.then(()=>console.log('your tables are created'))
+.catch((error)=>console.error(`please check an ${error} has occured`))
 
 
 

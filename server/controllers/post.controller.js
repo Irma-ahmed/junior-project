@@ -11,7 +11,7 @@ module.exports={
     },
     getOne:  async (req,res)=>{
         try {
-            const onePost= await db.post.findOne({where:{id:req.params.id}})
+            const onePost= await db.post.findOne({where:{author:req.params.author}})
             res.json(onePost)
         } catch (error) {
             throw error
